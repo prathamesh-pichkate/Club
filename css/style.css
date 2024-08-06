@@ -1117,3 +1117,98 @@ h1, h2, h3, h4, h5,
   .post-meta a {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+
+/* card code */
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero .container {
+  margin-top:4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+h3 {
+  font-size: 3rem; /* Adjusted font size */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; /* Adjusted font size */
+  margin-bottom: 20px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.plan {
+  background: rgba(2, 22, 9, 0.616); /* Transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50vh;
+  height: 60vh;
+}
+
+.plan.popular {
+  border: 2px solid rgb(82, 196, 6); /* Highlight the most popular plan */
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan .price {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.plan .features {
+  list-style: none;
+  padding: 0;
+}
+
+.plan .features li {
+  margin: 10px 0;
+}
+
+.plan button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.plan button:hover {
+  background: darkorange;
+}
