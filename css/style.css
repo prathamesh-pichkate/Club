@@ -142,7 +142,8 @@ h1, h2, h3, h4, h5,
   padding-bottom: 20px;
   margin-bottom: 0px;
   position: relative;
-  font-size: 30px; }
+  font-size: 30px; 
+  color: #ffffff;}
 
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
@@ -897,7 +898,8 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-size: 20px;
     position: relative;
-    padding-left: 30px; }
+    padding-left: 30px; 
+    ;}
     .title-section .heading:before {
       position: absolute;
       content: "";
@@ -1119,9 +1121,7 @@ h1, h2, h3, h4, h5,
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 
-/* card code */
-
-
+/* membership card code */
 .hero {
   position: relative;
   height: 100vh;
@@ -1219,4 +1219,140 @@ p {
 
 .plan button:hover {
   background: darkorange;
+}
+
+/* coaching code */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.football-section {
+  background-image: url('background.jpg'); /* Replace with your actual background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.football-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.details .point {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.details .point .number {
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.details .point .text {
+  max-width: 600px;
+}
+
+.details .point .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details .point .text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* testonimal coaching */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c110c;
+}
+
+.other-content {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.testimonial-container {
+  width: 90%;  /* Increased width */
+  max-width: 800px;  /* Increased max-width */
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #5fe266;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;  /* Increased padding */
+}
+
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 25vmin;
+  padding: 20px;
+}
+
+.testimonial p {
+  font-size: 25px;  /* Increased font size */
+  line-height: 1.6;  /* Increased line-height */
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.testimonial h3 {
+  font-size: 20px;  /* Increased font size */
+  color: #555555;
 }
